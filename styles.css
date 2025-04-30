@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background: linear-gradient(135deg, #0c1c3c, #004466);
+  color: #ffffff;
+}
+
+header {
+  background: #001f3f;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ccff;
+}
+
+header img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 10px 0;
+  color: #00ccff;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #c0e0ff;
+  font-weight: 400;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #00ccff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #00ccff;
+  padding-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #00ccff;
+  color: #001f3f;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #00aacc;
+}
+
+.day-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.day-buttons button {
+  background: #00ccff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #001f3f;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.day-buttons button:hover {
+  background: #00aacc;
+}
+
+.calendar-day {
+  display: none;
+}
+
+.calendar-day.active {
+  display: block;
+}
+
+.talk {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.talk:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.talk-description {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #c0e0ff;
+}
+
+.talk.active .talk-description {
+  display: block;
+}
+
+footer {
+  padding: 30px 20px;
+  background-color: #001f3f;
+  text-align: center;
+  font-size: 0.9em;
+  color: #cccccc;
+  border-top: 2px solid #00ccff;
+}

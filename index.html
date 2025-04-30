@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRA 2025 - Robotics & AI Event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="ASTRA 2025 Logo">
+    <h1>ASTRA 2025</h1>
+    <h2>Autonomous Systems, Telecommunications, Robotics and AI</h2>
+  </header>
+
+  <section>
+    <p>
+      Bienvenidos a <strong>ASTRA 2025</strong>, el evento internacional que conecta las mentes más brillantes en sistemas autónomos, telecomunicaciones, robótica e inteligencia artificial.
+    </p>
+    <a href="#registro" class="cta-button">Regístrate ahora</a>
+  </section>
+
+  <section>
+    <h3 class="section-title">Calendario</h3>
+    <div class="day-buttons">
+      <button onclick="showDay('dia1')">20 mayo</button>
+      <button onclick="showDay('dia2')">21 mayo</button>
+      <button onclick="showDay('dia3')">22 mayo</button>
+      <button onclick="showDay('dia4')">23 mayo</button>
+    </div>
+
+    <div id="dia1" class="calendar-day active">
+      <div class="talk" onclick="toggleTalk(this)">Inauguración y bienvenida
+        <div class="talk-description">Presentación oficial del evento, apertura institucional y bienvenida a los asistentes.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Panel: El futuro de la IA
+        <div class="talk-description">Expertos debaten sobre los retos éticos y tecnológicos del desarrollo de la inteligencia artificial.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Presentación de startups
+        <div class="talk-description">Emprendedores muestran proyectos innovadores relacionados con sistemas autónomos.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Cóctel de bienvenida
+        <div class="talk-description">Oportunidad para hacer networking con profesionales y asistentes del evento.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Exposición de posters
+        <div class="talk-description">Investigadores presentan sus últimos avances en IA y robótica mediante pósters técnicos.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Mesa de apertura con autoridades
+        <div class="talk-description">Representantes gubernamentales y académicos inauguran oficialmente ASTRA 2025.</div>
+      </div>
+    </div>
+
+    <div id="dia2" class="calendar-day">
+      <div class="talk" onclick="toggleTalk(this)">Jornadas técnicas: Robótica avanzada
+        <div class="talk-description">Charlas sobre robótica colaborativa, manipuladores inteligentes y automatización.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Taller: Drones inteligentes
+        <div class="talk-description">Sesión práctica para programar drones autónomos en escenarios simulados.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Ponencia: Redes 6G
+        <div class="talk-description">Exploración de las futuras redes móviles y su aplicación en el IoT industrial.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Mesa redonda: Mujeres en la tecnología
+        <div class="talk-description">Experiencias y perspectivas de mujeres líderes en ingeniería y ciencia.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Debate: Ética en la inteligencia artificial
+        <div class="talk-description">Discusión sobre los límites éticos del uso de sistemas autónomos en la sociedad.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Networking técnico temático
+        <div class="talk-description">Sesiones de networking por especialidades técnicas (visión por computador, machine learning, etc.).</div>
+      </div>
+    </div>
+
+    <div id="dia3" class="calendar-day">
+      <div class="talk" onclick="toggleTalk(this)">Demostraciones tecnológicas
+        <div class="talk-description">Demostraciones en vivo de proyectos desarrollados por universidades y empresas.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Competencia de robots autónomos
+        <div class="talk-description">Equipos universitarios compiten en un desafío de navegación y resolución de tareas.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Charla: Ciberseguridad para sistemas autónomos
+        <div class="talk-description">Cómo proteger los entornos de IA y robótica frente a amenazas externas.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Feria de tecnología
+        <div class="talk-description">Stands interactivos con productos, servicios y prototipos de empresas punteras.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Taller: Interfaces cerebro-computadora
+        <div class="talk-description">Introducción práctica a las tecnologías de control neuronal para dispositivos autónomos.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Presentación de proyectos estudiantiles
+        <div class="talk-description">Alumnos de máster y doctorado presentan sus trabajos más innovadores en el área de robótica e IA.</div>
+      </div>
+    </div>
+
+    <div id="dia4" class="calendar-day">
+      <div class="talk" onclick="toggleTalk(this)">Clausura y entrega de premios
+        <div class="talk-description">Resumen del evento, entrega de reconocimientos y networking final.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Charla magistral: Robótica y espacio
+        <div class="talk-description">Aplicaciones de robots y sistemas autónomos en misiones espaciales.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Networking con patrocinadores
+        <div class="talk-description">Encuentro entre asistentes y representantes de empresas líderes del sector.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Conclusiones y próxima edición
+        <div class="talk-description">Reflexiones finales, encuestas de satisfacción y anuncio de ASTRA 2026.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Foro de discusión abierta
+        <div class="talk-description">Espacio colaborativo donde los asistentes pueden plantear ideas y retos futuros.</div>
+      </div>
+      <div class="talk" onclick="toggleTalk(this)">Proyecciones tecnológicas 2030
+        <div class="talk-description">Análisis de tendencias y predicciones sobre los próximos desarrollos en IA y robótica.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ASTRA. Todos los derechos reservados. | Diseñado para un futuro autónomo
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
